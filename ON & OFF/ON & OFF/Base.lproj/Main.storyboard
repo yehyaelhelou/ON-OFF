@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pzK-cV-1Kr">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="aaP-wP-bb9">
+            <objects>
+                <viewController id="pzK-cV-1Kr" customClass="ViewController" customModule="eluxon_teacherbuild" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Rb-3b-ajp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIj-Dr-Y2e">
+                                <rect key="frame" x="146.66666666666666" y="643" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="pAg-nA-11u"/>
+                                    <constraint firstAttribute="height" constant="100" id="wVt-5o-ZeZ"/>
+                                </constraints>
+                                <state key="normal" image="offBtn"/>
+                                <connections>
+                                    <action selector="toggleBtnWasPressed:" destination="pzK-cV-1Kr" eventType="touchUpInside" id="zEH-L7-dHY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌚 OFF 🌚" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQC-Mz-ZSS">
+                                <rect key="frame" x="83.666666666666671" y="391.66666666666669" width="225.66666666666663" height="69"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YV4-Qr-ezz"/>
+                        <color key="backgroundColor" red="0.29029515389999999" green="0.29028901460000001" blue="0.2902931869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="JQC-Mz-ZSS" firstAttribute="centerY" secondItem="1Rb-3b-ajp" secondAttribute="centerY" id="4FX-VI-6mq"/>
+                            <constraint firstItem="JQC-Mz-ZSS" firstAttribute="centerX" secondItem="1Rb-3b-ajp" secondAttribute="centerX" id="IVi-sp-zeJ"/>
+                            <constraint firstItem="YV4-Qr-ezz" firstAttribute="bottom" secondItem="aIj-Dr-Y2e" secondAttribute="bottom" constant="75" id="UO1-9d-XyS"/>
+                            <constraint firstItem="aIj-Dr-Y2e" firstAttribute="centerX" secondItem="1Rb-3b-ajp" secondAttribute="centerX" id="xVr-Vy-qin"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flashlightStatusLbl" destination="JQC-Mz-ZSS" id="V2v-mu-TrC"/>
+                        <outlet property="toggleBtn" destination="aIj-Dr-Y2e" id="oIf-ZZ-koZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tok-a6-idM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="-104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="offBtn" width="110" height="110"/>
+    </resources>
+</document>
